@@ -1,5 +1,5 @@
 
-/*----------------------import the file downalded from google--*/
+/*----------------------imported the file downalded from google--*/
 @font-face{
     font-family: "Roboto";
     src: '../fonts/Roboto/Roboto-Regular.ttf';
@@ -20,6 +20,10 @@ body{
 }
 .header img{
     width: 100%;
+}
+
+.content .container .text-center {
+   transform: translateY(700%);
 }
 
 .content-wrapper{

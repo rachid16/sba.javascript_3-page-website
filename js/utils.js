@@ -1,4 +1,5 @@
 
+document.forms["feedback"]["full-name"].focus();
 
 function ValidateEmail() 
 {
@@ -12,24 +13,13 @@ function ValidateEmail()
 
     if (isString(fullName)){
         alert("You have entered an invalid Name !");
-    }else
-    
-    {
-        alert("You  Name !");
     }
-
 
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(!email.match(mailformat))
     {
         alert("You have entered an invalid email address!");
-        document.feedback-form.email.focus();
-        return false;
     }
-   
-    
-
-    
 
 }
 

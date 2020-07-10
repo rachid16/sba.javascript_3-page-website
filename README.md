@@ -1,5 +1,6 @@
 1.1	Introduction
-
+        Access my site by navigating to the link: https://rachid16.github.io/sba.javascript_3-page-website
+        
        The purpose of this document is to add the important detail to the current project description. This document is also intended to help the users to discover the feature of the website and can be used as a reference manual.
 
 1.2	Scope of this Document

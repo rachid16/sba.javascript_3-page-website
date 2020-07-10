@@ -36,7 +36,6 @@ body{
 .content-wrapper .container{
     width: 100%;
     float: left;
-    border:1px solid #c5c4c4;
     background-color:#f9f9f9;
     border-radius:5px;
 }
@@ -45,12 +44,11 @@ body{
 .content-wrapper .content{
    float: left;
    width: 80%;
-   background-color: #ffffff;
-  padding:20px;
-  padding-bottom:50px;
-  border-left:1px solid #c5c4c4;
-  border-radius:0px 5px 5px 0px;
-  min-height: 600px;
+   background-color: #f9f9f9;
+   padding:20px;
+   padding-bottom:50px;
+   border-radius:0px 5px 5px 0px;
+   min-height: 600px;
 }
 
 

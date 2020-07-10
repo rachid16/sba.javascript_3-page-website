@@ -1,26 +1,50 @@
-// Utility JS functions are to be defined here
-function resizeIFrameToFitContent( iFrame ) {
-    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+
+
+function ValidateEmail() 
+{
+    var fullName = document.forms["feedback"]["full-name"].value;
+    var email = document.forms["feedback"]["email"].value;
+    var model = document.forms["feedback"]["model"].value;
+    var msg = document.forms["feedback"]["message"].value;
+    var rate = document.forms["feedback"]["service"].value;
+
+
+
+    if (isString(fullName)){
+        alert("You have entered an invalid Name !");
+    }else
+    
+    {
+        alert("You  Name !");
+    }
+
+
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(!email.match(mailformat))
+    {
+        alert("You have entered an invalid email address!");
+        document.feedback-form.email.focus();
+        return false;
+    }
+   
+    
+
+    
+
 }
 
-// used to fetch all methods of an arbitrary object to display to client
-function getAllMethodsOfObejct(obj) {
-    var result = [];
-    for (var id in obj) {
-      try {
-        if (typeof(obj[id]) == "function") {
-          result.push(id + ": " + obj[id].toString());
+
+function isString(str){
+    var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    str = str.toLowerCase();    
+    let result = true;
+    let toCheckArray = str.split('');
+    for (let x of toCheckArray) {
+        if (!(x in alphabet)) {
+            result = false;
+            break;
         }
-      } catch (err) {
-        result.push(id + ": inaccessible");
-      }
     }
     return result;
-  }
-
-
-
-function loadHtml(elementId, fileName) {
-    $(elementId).html('<object data="'+ fileName + '">');
-};
+}
+/**/

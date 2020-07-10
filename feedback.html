@@ -7,6 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>sba</title>
 
+
+
          <!---------  Bootstrap css file  -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
 
@@ -64,14 +66,14 @@
                 <h2 class="heading">Feedback Form</h2>
                 <p>We use this survey data to improve our customer experience. If you have something specific you need help with it's best to contact our customer service</p>
 
-                <div class="feedback-form">
-                    <form>
+                <div class="feedback-form" >
+                  <form name="feedback">
                     <div class="row"> 
                         <div class="label">
                         Full Name
                         </div>
                         <div class="input">
-                        <input type="text" class="form-control" placeholder="First name  last name">
+                        <input type="text" class="form-control" name="full-name"placeholder="First name  last name">
                         </div>
                     </div>
 
@@ -80,7 +82,7 @@
                         Email
                         </div>
                         <div class="input">
-                        <input type="email" class="form-control" placeholder="xyz@gmail.com">
+                        <input type="email" class="form-control" name="email" placeholder="xyz@gmail.com">
                         </div>
                     </div>
                     <div class="row"> 
@@ -88,7 +90,7 @@
                         Model No
                         </div>
                         <div class="input">
-                        <input type="text" class="form-control" placeholder="ex:Model 34">
+                        <input type="text" class="form-control" name="model" placeholder="ex:Model 34">
                         </div>
                     </div>
                     <div class="row"> 
@@ -96,7 +98,7 @@
                         Message
                         </div>
                         <div class="input">
-                        <textarea class="form-control" placeholder="Message"></textarea>
+                        <textarea class="form-control" name="message" placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="row"> 
@@ -104,13 +106,13 @@
                         Service 
                         </div>
                         <div class="input">
-                        <select class="form-control">
-                            <option value="star1">Star 1</option>
-                            <option value="star2">Star 2</option>
-                            <option value="star3">Star 3</option>
-                            <option value="star4">Star 4</option>
-                            <option value="star5">Star 5</option>
-                        </select>
+                          <select class="form-control" name="service">
+                              <option value="star1">Star 1</option>
+                              <option value="star2">Star 2</option>
+                              <option value="star3">Star 3</option>
+                              <option value="star4">Star 4</option>
+                              <option value="star5">Star 5</option>
+                          </select>
                         </div>
                     </div>
                     <div class="row"> 
@@ -118,26 +120,29 @@
                         
                         </div>
                         <div class="input">
-                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                          <button class="btn btn-primary" type="submit" onclick="ValidateEmail()">Submit </button>
                         </div>
                     </div>
-                </form>
-                </div>
+                  </form>
+                </div> 
             </div>
-        </div>
+        </div>    
     </div>
    
+  
     <!-- End Content -->
 
 
 
 
 
-
-
+  
     <!--  Jquery js file  -->
     <script src="./js/jquery-3.5.1.min.js"></script>
         <!--  Bootstrap js file  -->
     <script src="./js/bootstrap.min.js"></script> 
+
+    <script src="./js/utils.js"></script>
+  
     </body>
 </html>
